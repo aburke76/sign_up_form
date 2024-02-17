@@ -3,11 +3,35 @@
 }
 
 body {
+    display: flex;
     margin: 0;
     height: 375px;
 }
 
 img {
+    display: block;
     width: 33vw;
     height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 250px;
+    letter-spacing: 45px;
+    font-family: "Anta";
+    height: 100px;
+    width: 33vw;
+    color: lightgray;
+    font-size: 3rem;
+}
+
+.formContent {
+    font-family: "Ubuntu", "sans serif";
+    display: block;
+    width: 66vw;
+    height: 100vh;
+    background-color: #14213d;
 }
