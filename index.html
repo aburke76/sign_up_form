@@ -8,10 +8,14 @@
             @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
             @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
         </style>
+        <script
+            src="https://kit.fontawesome.com/eb430e4f57.js"
+            crossorigin="anonymous"
+        ></script>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div>
+        <div class="background-img">
             <img src="/images/rocket.jpeg" alt="rocket" />
             <div class="logo">ROVE</div>
         </div>
@@ -29,28 +33,41 @@
                 <form action="/index.html" method="post" id="form">
                     <div class="form">
                         <div class="left-side">
+                            <div style="margin-bottom: 10px;">*required</div>
                             <label for="first-name">First Name*</label>
-                            <input required type="text" id="first-name">
+                            <input tabindex="1" required type="text" id="first-name">
                             <label for="email">Email*</label>
-                            <input required type="email" name="email" id="email">
+                            <input tabindex="3" required type="email" name="email" id="email">
                             <label for="password">Password*</label>
-                            <input required type="password" name="password" id="password">
+                            <input class="password" tabindex="5" required type="password" name="password" id="password">
+                            <div class="no-match"></div>
                         </div>
                         <div class="right-side">
                             <label for="last-name">Last Name*</label>
-                            <input required type="text" id="last-name">
-                            <label for="phone">Phone Number*</label>
-                            <input required type="tel" name="phone" id="phone">
-                            <label for="confirm-password">Confirm Password*</label>
-                            <input required type="password" name="confirm-password" id="confirm-password">
+                            <input tabindex="2" required type="text" id="last-name">
+                            <label for="phone">Phone Number* <span id="numberEx">ex: 123-456-7890</span></label>
+                            <input pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" tabindex="4" required type="tel" name="phone" id="phone">
+                            <label for="confirmPassword">Confirm Password*</label>
+                            <input class="password" tabindex="6" required type="password" name="confirmPassword" id="confirmPassword">
                         </div>
                     </div>
+                    
+                    
                     <div class="login">
-                        <button class="submit" type="submit" id="form">BLAST OFF</button>
+                        <button class="submit" type="submit" id="formBtn">BLAST OFF</button>
                         <span>Aready have an account? <a href="">Log in</a></span>
                     </div>
 
-            <div class="bottom"></div>
-        </div>
+                    
+                </div>
+    <footer>
+        <p>
+            &copy aburke76
+            <a id="icon" href="https://github.com/aburke76"
+                ><i class="fa-brands fa-github"></i
+            ></a>
+        </p>
+    </footer>
+    
     </body>
 </html>
