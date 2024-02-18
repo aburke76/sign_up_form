@@ -6,32 +6,104 @@ body {
     display: flex;
     margin: 0;
     height: 375px;
+    overflow: hidden;
 }
 
 img {
-    display: block;
+    position: relative;
     width: 33vw;
     height: 100vh;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
+    position: absolute;
+    left: 85px;
     bottom: 250px;
     letter-spacing: 45px;
     font-family: "Anta";
-    height: 100px;
+    /* height: 100px; */
     width: 33vw;
     color: lightgray;
     font-size: 3rem;
 }
 
 .formContent {
+    display: flex;
+    flex-direction: column;
     font-family: "Ubuntu", "sans serif";
-    display: block;
     width: 66vw;
     height: 100vh;
     background-color: #14213d;
+}
+
+.top {
+    color: lightgray;
+    padding-left: 60px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 50vw;
+    line-height: 2;
+}
+
+p span {
+    font-family: "Anta";
+    letter-spacing: 3px;
+}
+
+.form {
+    display: flex;
+    height: max-content;
+    width: 66vw;
+    font-family: "Anta";
+    color: lightgray;
+    background-color: #263149;
+    margin: 0 auto;
+    box-shadow: 0 3px 8px black;
+}
+
+input {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-left: 2px;
+}
+
+.left-side,
+.right-side {
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.submit {
+    margin: 60px;
+    padding: 20px 60px;
+    font-size: medium;
+    font-family: "anta";
+    letter-spacing: 0.5rem;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 145, 0);
+}
+
+div span {
+    color: lightgray;
+}
+
+div span a {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+a:hover {
+    text-decoration: underline;
 }
