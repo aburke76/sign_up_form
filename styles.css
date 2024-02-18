@@ -23,7 +23,7 @@ img {
     font-family: "Anta";
     /* height: 100px; */
     width: 33vw;
-    color: lightgray;
+    color: #e5e5e5;
     font-size: 3rem;
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 .top {
-    color: lightgray;
+    color: #e5e5e5;
     padding-left: 60px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -55,7 +55,7 @@ p span {
     height: max-content;
     width: 66vw;
     font-family: "Anta";
-    color: lightgray;
+    color: #e5e5e5;
     background-color: #263149;
     margin: 0 auto;
     box-shadow: 0 3px 8px black;
@@ -67,6 +67,13 @@ input {
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 18px;
+    border: 1px solid #e5e5e5;
+}
+
+input:focus {
+    border: 2px solid rgb(255, 145, 0);
+    box-shadow: 3px 3px 5px #000000;
+    outline: none;
 }
 
 label {
@@ -96,7 +103,7 @@ button:hover {
 }
 
 div span {
-    color: lightgray;
+    color: #e5e5e5;
 }
 
 div span a {
