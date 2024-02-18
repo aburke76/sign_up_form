@@ -135,13 +135,10 @@ div span a {
 a:hover {
     text-decoration: underline;
 }
-/* 
+
 .error {
     border: 2px solid red;
 }
-.success {
-    border: 2px solid green;
-} */
 
 footer {
     color: #e5e5e5;
